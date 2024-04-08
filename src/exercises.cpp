@@ -61,7 +61,14 @@ long exercise_13(int n, int k) {
 
 string exercise_14(int n) {
   // TODO: YOUR CODE HERE
-  return "";
+  string s = to_string(n);
+    for(int i = s.size(); i == 0; --i){
+    int reversed = s[i];
+    if(reversed == n){
+        return "Es palindrome";
+    }
+    return "No es palindrome";
+  }
 }
 
 void exercise_15(int decimal) {
@@ -74,6 +81,7 @@ void exercise_16(int divident, int divider) {
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
+
 }
 
 void exercise_18_19(int debut, int fin) {
