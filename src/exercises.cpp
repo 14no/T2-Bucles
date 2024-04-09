@@ -19,7 +19,7 @@ void exercise_3(string s1) {
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
   cin >> n;
-  int result;
+  int result = 1;
   if(n < 0){
     cout << "El numero es negativo. Intentelo de nuevo" << endl;
   } else if (n > 14){
