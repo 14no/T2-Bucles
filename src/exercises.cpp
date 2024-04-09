@@ -18,6 +18,18 @@ void exercise_3(string s1) {
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
+  if(0 < n && n < 14){
+        for(int i = 0; i < n; ++i){
+            int factorial = n - i;
+            cout << factorial << endl;
+        }
+    } else if(n < 0){
+        cout << "El numero es negativo. Intentelo de nuevo" << endl;
+    } else if (n > 14){
+        cout << "El numero es muy grande. Intentelo de nuevo" << endl;
+    } else if (n == 0){
+        cout << 1 << endl;
+    } 
 }
 
 void exercise_5(int n, int k) {
@@ -26,6 +38,7 @@ void exercise_5(int n, int k) {
 
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
+  
   return 0;
 }
 
@@ -81,7 +94,6 @@ void exercise_16(int divident, int divider) {
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
-
 }
 
 void exercise_18_19(int debut, int fin) {
