@@ -69,12 +69,15 @@ void exercise_8(string s) {
     spaces += s[i];
   }
   for(int i = s.size() - 1; i >= 0; --i){
-    reversed += s[i];
+    reversed += spaces[i];
   }
   if(reversed == s){
     cout << "YES" << endl;
   } else {
     cout << "NO" << endl;
+  }
+  if (s == ""){
+    cout << "YES" << endl;
   }
 }
 
