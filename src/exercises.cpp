@@ -12,14 +12,12 @@ void exercise_1(string s1) {
     break;
     }
   }
-  i -= 1;
   cout << i << endl;
     
   int j = 0;
   while(j < s1.size()){
     ++j;
-  } 
-  j -= 1;
+  }
   cout << j << endl;
 }
 
