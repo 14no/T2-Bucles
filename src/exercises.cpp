@@ -6,7 +6,14 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-
+  int i;
+  for (i = 0; i < s1.size(); i++){
+    if (s1[i] != ' '){
+      continue;
+    }
+  }
+  i -= 1;
+  cout << i << endl;
 }
 
 void exercise_2(string s1) {
@@ -84,6 +91,7 @@ void exercise_9(string s) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
+
   return 0;
 }
 
