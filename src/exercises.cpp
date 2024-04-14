@@ -19,7 +19,17 @@ void exercise_1(string s1) {
 void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
   string word;
-    int i = 0;
+  int i = 0;
+    while (i < s1.size()){
+        if(s1[i] == ' '){
+          cout << "[" << word << "]" << endl;
+          break;
+        }
+    word += s1[i];
+    ++i;
+    }
+  word = "";
+    ++i;
     while (i < s1.size()){
         if(s1[i] == ' '){
             cout << "[" << word << "]" << endl;
@@ -27,6 +37,7 @@ void exercise_2(string s1) {
     word += s1[i];
     ++i;
     }
+    cout << "[" << word << "]" << endl;
 }
 
 void exercise_3(string s1) {
