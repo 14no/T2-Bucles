@@ -6,19 +6,14 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-  int i;
-  for (i = 0; i < s1.size(); ++i){
+  int i = 0;
+  while(i < s1.size()){
     if (s1[i] == ' '){
-    break;
+      cout << i << endl;
     }
+  ++i;
   }
   cout << i << endl;
-    
-  int j = 0;
-  while(j < s1.size()){
-    ++j;
-  }
-  cout << j << endl;
 }
 
 void exercise_2(string s1) {
