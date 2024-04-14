@@ -103,9 +103,10 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
-  while (n != 0){
-    res = n % 2;
-    n = n / 2
+  int res, mult = 1, acum = 0;
+  while (decimal != 0){
+    res = decimal % 2;
+    decimal = decimal / 2
     res = res * mult;
     mult = mult * 10;
     acum = acum + res;
