@@ -27,7 +27,6 @@ void exercise_3(string s1) {
 
 void exercise_4(int n) {
   // TODO: YOUR CODE HERE
-  cin >> n;
   int result = 1;
   if(n < 0){
     cout << "El numero es negativo. Intentelo de nuevo" << endl;
@@ -41,7 +40,6 @@ void exercise_4(int n) {
      }
   cout << result << endl;
   }
-
 }
 
 void exercise_5(int n, int k) {
@@ -65,6 +63,19 @@ void exercise_7(int n) {
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
+  string spaces;
+  string reversed;
+  for(int i = 0; i >= s.size(); ++i){
+    spaces += s[i];
+  }
+  for(int i = s.size() - 1; i >= 0; --i){
+    reversed += s[i];
+  }
+  if(reversed == s){
+    cout << "YES" << endl;
+  } else {
+    cout << "NO" << endl;
+  }
 }
 
 void exercise_9(string s) {
