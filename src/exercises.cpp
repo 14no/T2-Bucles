@@ -70,7 +70,7 @@ void exercise_5(int n, int k) {
 int exercise_6(int n) {
   // TODO: YOUR CODE HERE
   int res, sum = 0;
-  while (n != 0){
+  while (n > 0){
     res = n % 10;
     sum = res + sum;
     n = n / 10;
