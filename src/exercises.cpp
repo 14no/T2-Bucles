@@ -86,8 +86,8 @@ void exercise_12() {
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
-  int suma
-  long int aux = 0;
+  int suma;
+  long aux = 0;
   for(int i = i; i <= n; i++){
     suma = pow(n, k);
     aux = aux + suma;
