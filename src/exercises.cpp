@@ -76,7 +76,7 @@ void exercise_8(string s) {
   } else {
     cout << "NO" << endl;
   }
-  if (s == ""){
+  if (s == " "){
     cout << "YES" << endl;
   }
 }
