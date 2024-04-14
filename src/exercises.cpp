@@ -111,7 +111,7 @@ void exercise_15(int decimal) {
     mult = mult * 10;
     acum = acum + res;
     }
-    cout << acum;
+    cout << acum << endl;
 }
 
 void exercise_16(int divident, int divider) {
