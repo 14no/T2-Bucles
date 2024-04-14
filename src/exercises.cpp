@@ -24,8 +24,9 @@ void exercise_2(string s1) {
     if(s1[i] == ' '){
       cout << "[" << word << "]" << endl;
       word = "";
+    } else {
+      word += s1[i];
     }
-    word += s1[i];
   ++i;
   }
   cout << "[" << word << "]" << endl;
