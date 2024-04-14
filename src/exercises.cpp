@@ -12,7 +12,6 @@ void exercise_1(string s1) {
       continue;
     }
   }
-  i -= 1;
   cout << i << endl;
 }
 
