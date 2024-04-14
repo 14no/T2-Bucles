@@ -86,7 +86,13 @@ void exercise_12() {
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
-  return 0;
+  int suma
+  long int aux = 0;
+  for(int i = i; i <= n; i++){
+    suma = pow(n, k);
+    aux = aux + suma;
+  }
+  return aux;
 }
 
 string exercise_14(int n) {
