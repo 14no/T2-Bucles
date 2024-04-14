@@ -156,7 +156,6 @@ void exercise_17(int n) {
   }
   num++;
   }
-  cout << endl;
 }
 
 void exercise_18_19(int debut, int fin) {
