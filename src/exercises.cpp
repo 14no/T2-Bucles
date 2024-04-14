@@ -76,9 +76,6 @@ void exercise_8(string s) {
   } else {
     cout << "NO" << endl;
   }
-  if (s == " "){
-    cout << "YES" << endl;
-  }
 }
 
 void exercise_9(string s) {
@@ -138,10 +135,26 @@ void exercise_15(int decimal) {
 
 void exercise_16(int divident, int divider) {
   // TODO: YOUR CODE HERE
+
 }
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
+  while (contador < n) {
+    bool esPrimo = true;
+    for (int i = 2; i * i <= num; i++) {
+      if (num % i == 0) {
+        esPrimo = false;
+        break;
+      }
+    }
+  if (esPrimo) {
+    cout << num << " ";
+    contador++;
+  }
+  num++;
+  }
+  cout << endl;
 }
 
 void exercise_18_19(int debut, int fin) {
