@@ -6,13 +6,21 @@ using namespace std;
 
 void exercise_1(string s1) {
   // TODO: YOUR CODE HERE
-  int i;
-  for (i = 0; i < s1.size(); i++){
-    if (s1[i] != ' '){
-      continue;
+  int j;
+    for (j = 0; j < s1.size(); ++j){
+        if (s1[j] == ' '){
+        break;
+        }
     }
-  }
-  cout << i << endl;
+    j -= 1;
+    cout << j << endl;
+    
+    int i = 0;
+    while(i < s1.size()){
+        ++i;
+    } 
+    i -= 1;
+    cout << i << endl;
 }
 
 void exercise_2(string s1) {
