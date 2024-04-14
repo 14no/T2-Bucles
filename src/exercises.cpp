@@ -98,12 +98,14 @@ long exercise_13(int n, int k) {
 string exercise_14(int n) {
   // TODO: YOUR CODE HERE
   string s = to_string(n);
-    for(int i = s.size(); i == 0; --i){
-    int reversed = s[i];
-    if(reversed == n){
-        return "Es palindrome";
-    }
-    return "No es palindrome";
+  string reversed;
+  for(int i = s.size() - 1; i >= 0; --i){
+    reversed +=s[i];
+  }
+  if(rever == s){
+    cout << "Es palindrome";
+  } else {
+    cout << "No es palindrome";   
   }
 }
 
