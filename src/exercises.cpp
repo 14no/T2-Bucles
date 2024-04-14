@@ -29,7 +29,9 @@ void exercise_2(string s1) {
     }
   ++i;
   }
-  cout << "[" << word << "]" << endl;
+  if (word.size() > 0){
+    cout << "[" << word << "]" << endl;
+  }
 }
 
 void exercise_3(string s1) {
