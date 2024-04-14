@@ -102,7 +102,7 @@ string exercise_14(int n) {
   for(int i = s.size() - 1; i >= 0; --i){
     reversed +=s[i];
   }
-  if(rever == s){
+  if(reversed == s){
     cout << "Es palindrome";
   } else {
     cout << "No es palindrome";   
