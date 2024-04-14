@@ -20,24 +20,14 @@ void exercise_2(string s1) {
   // TODO: YOUR CODE HERE
   string word;
   int i = 0;
-    while (i < s1.size()){
-        if(s1[i] == ' '){
-          cout << "[" << word << "]" << endl;
-          break;
-        }
-    word += s1[i];
-    ++i;
+  while (i < s1.size()){
+    if(s1[i] == ' '){
+      cout << "[" << word << "]" << endl;
+      word = "";
     }
-  word = "";
-    ++i;
-    while (i < s1.size()){
-        if(s1[i] == ' '){
-            cout << "[" << word << "]" << endl;
-        }
     word += s1[i];
-    ++i;
-    }
-    cout << "[" << word << "]" << endl;
+  ++i;
+  }
 }
 
 void exercise_3(string s1) {
