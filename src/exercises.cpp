@@ -53,7 +53,7 @@ int exercise_6(int n) {
   int res, sum = 0;
   while (n != 0){
     res = n % 10;
-    sum = residuo + sum;
+    sum = res + sum;
     n = n / 10;
   }
   return sum;
@@ -106,7 +106,7 @@ void exercise_15(int decimal) {
   int res, mult = 1, acum = 0;
   while (decimal != 0){
     res = decimal % 2;
-    decimal = decimal / 2
+    decimal = decimal / 2;
     res = res * mult;
     mult = mult * 10;
     acum = acum + res;
