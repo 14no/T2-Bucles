@@ -103,9 +103,9 @@ string exercise_14(int n) {
     reversed +=s[i];
   }
   if(reversed == s){
-    cout << "Es palindrome";
+    return "Es palindrome";
   } else {
-    cout << "No es palindrome";   
+    return "No es palindrome";   
   }
 }
 
