@@ -140,6 +140,8 @@ void exercise_16(int divident, int divider) {
 
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
+  int num = 2;
+  int contador = 0;
   while (contador < n) {
     bool esPrimo = true;
     for (int i = 2; i * i <= num; i++) {
