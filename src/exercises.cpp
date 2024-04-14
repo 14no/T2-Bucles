@@ -103,6 +103,14 @@ string exercise_14(int n) {
 
 void exercise_15(int decimal) {
   // TODO: YOUR CODE HERE
+  while (n != 0){
+    res = n % 2;
+    n = n / 2
+    res = res * mult;
+    mult = mult * 10;
+    acum = acum + res;
+    }
+    cout << acum;
 }
 
 void exercise_16(int divident, int divider) {
