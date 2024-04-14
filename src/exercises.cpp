@@ -76,9 +76,6 @@ int exercise_6(int n) {
     n = n / 10;
   }
   return sum;
-  if (n < 0){
-    return 0;
-  }
 }
 
 void exercise_7(int n) {
