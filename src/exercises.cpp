@@ -92,7 +92,7 @@ void exercise_5(int n, int k) {
     string _i;
     for(int i = 1; i<=k; ++i){
         int s = 20;
-        int r = 0
+        int r = 0;
         while(r<=14){
             if(espacio1.size()== s+(s*r) + r){
                 espacio1= espacio1 + '\n';
@@ -316,4 +316,34 @@ void exercise_17(int n) {
 
 void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
+  if(fin>=debut){
+  if(debut>0 && fin>0){
+
+        for(debut; debut<=fin; ++debut){
+            int i = 0;
+            int debut1= debut;
+            while(debut1!=0){
+                if(debut1%3 == 0){
+                    debut1 += 4;
+                    ++i;
+                    
+                }else if(debut1%4==0){
+                    debut1 /=2;
+                    ++i;
+                    
+                }else{
+                    --debut1;
+                    ++i;
+                    
+                }
+            }
+            cout << debut << "->" << i << endl;
+        }
+    }else{
+            cout << "El numero debe de ser positivo y mayor a zero" << endl;
+        }
+    }else{
+        cout << "El numero de fin no debe de ser menor al inicial" << endl;
+    
+    }
 }
