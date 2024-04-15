@@ -93,10 +93,13 @@ void exercise_8(string s) {
   for(int i = s.size() - 1; i >= 0; --i){
     reversed += spaces[i];
   }
-  if(reversed == s || s == ""){
+  if(reversed == s){
     cout << "YES" << endl;
   } else {
     cout << "NO" << endl;
+  }
+  if(s == ""){
+    cout << "YES" << endl;
   }
 }
 
