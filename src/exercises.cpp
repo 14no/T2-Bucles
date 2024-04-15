@@ -223,7 +223,7 @@ void exercise_16(int divident, int divider) {
   int c = 0;
   int res = 0;
   if (divider == 0){
-    cout << "" << endl;
+    cout << "";
   } else {
     c = divident / divider;
     res = divident % divider;
