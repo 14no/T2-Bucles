@@ -113,7 +113,7 @@ void exercise_9(string s) {
   // TODO: YOUR CODE HERE
   int f = 0;
   int j = 0;
-  for (int i = 1: i < s.size(); ++i){
+  for (int i = 1; i < s.size(); ++i){
     switch(s[i]){
       case 'f':
       ++f;
