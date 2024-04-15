@@ -141,8 +141,23 @@ int exercise_10(int a, int b) {
       a = b;
       b = aux;
     }
+    int i = a;
+    while(i >= 1){
+      if (a % i == 0 && b % i == 0){
+        return i;
+        break;
+      } else {
+        i -= 1;
+      }
+    }
   }
-  return b;
+  else {
+    if (a > b){
+      return a;
+    } else if (a < b){
+      return b;
+    }
+  }
 }
 
 void exercise_11() {
