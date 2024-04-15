@@ -131,7 +131,13 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
-
+  float U = 1;
+  int V = 0;
+  for (int i = 1; i <= 10; ++i){
+    V += U;
+    cout << "U" << i << " = " << U << "V" << i << " = " << V << endl;
+    U /= (n + 1);
+  }
 }
 
 long exercise_13(int n, int k) {
