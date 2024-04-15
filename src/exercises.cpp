@@ -65,6 +65,30 @@ void exercise_4(int n) {
 
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
+  string espacio1;
+    switch(n){
+        case 1:
+            espacio1 =  " "s;
+            break;
+        case 2:
+            espacio1 =  "  "s;
+            break;
+        case 3:
+            espacio1 =  "     "s;
+            break;
+        case 4:
+            espacio1 =  "        "s;
+            break;
+        case 5:
+            espacio1 =  "           "s;
+            break;
+        case 6:
+            espacio1 =  "              "s;
+            break;
+        case 7:
+            espacio1 =  "                 "s;
+            break;
+    }
 }
 
 int exercise_6(int n) {
