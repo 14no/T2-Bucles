@@ -176,7 +176,7 @@ void exercise_12() {
   for (int i = 1; i <= 10; ++i){
     V += U;
     cout << "U" << i << " = " << U << "V" << i << " = " << V << endl;
-    U /= (i + 1);
+    U = U / (i + 1);
   }
 }
 
