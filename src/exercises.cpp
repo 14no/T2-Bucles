@@ -111,7 +111,18 @@ void exercise_8(string s) {
 
 void exercise_9(string s) {
   // TODO: YOUR CODE HERE
-
+  int f = 0;
+  int j = 0,
+  for (int i = 1: i < s.size(); ++i){
+    switch(s[i]){
+      case 'f':
+      ++f;
+    }
+  }
+  if (f <= 0){
+    cout << "-2" << endl;
+  } else if (f == 1){
+    cout << "-1" << endl;
 }
 
 int exercise_10(int a, int b) {
