@@ -80,6 +80,7 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
+
 }
 
 void exercise_8(string s) {
@@ -92,7 +93,7 @@ void exercise_8(string s) {
   for(int i = s.size() - 1; i >= 0; --i){
     reversed += spaces[i];
   }
-  if(reversed == s){
+  if(reversed == s || s == ""){
     cout << "YES" << endl;
   } else {
     cout << "NO" << endl;
