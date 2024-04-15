@@ -205,7 +205,16 @@ void exercise_15(int decimal) {
 
 void exercise_16(int divident, int divider) {
   // TODO: YOUR CODE HERE
-  
+  int c = 0;
+  int res = 0;
+  if (divider == 0){
+    cout << "" << endl;
+  } else {
+    c = divident / divider;
+    res = divident % divider;
+    cout << c << " ";
+    cout << res << endl;
+  }
 }
 
 void exercise_17(int n) {
