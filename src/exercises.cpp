@@ -123,12 +123,26 @@ void exercise_9(string s) {
     cout << "-2" << endl;
   } else if (f == 1){
     cout << "-1" << endl;
+  } else if (f == 2){
+    for (int i = 0; i < s.size(); ++i){
+      if (s[i] == 'f'){
+        j = i;
+      }
+    }
+  cout << j << endl;
+  }
 }
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-
-  return 0;
+  if(a > 0 && b > 0 && a != b){
+    if(a > b){
+      int aux = a;
+      a = b;
+      b = aux;
+    }
+  }
+  return b;
 }
 
 void exercise_11() {
