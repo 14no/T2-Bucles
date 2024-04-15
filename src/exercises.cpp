@@ -180,14 +180,7 @@ void exercise_15(int decimal) {
 
 void exercise_16(int divident, int divider) {
   // TODO: YOUR CODE HERE
-  int c = 0;
-  int res;
-  while(divident >= divider){
-    divident -= divider;
-    ++c;
-    res = divident;
-  }
-  cout << c << res << endl;
+  
 }
 
 void exercise_17(int n) {
