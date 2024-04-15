@@ -91,22 +91,30 @@ void exercise_7(int n) {
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
-  string spaces;
-  string reversed;
-  for(int i = 0; i >= s.size(); ++i){
-    spaces += s[i];
-  }
-  for(int i = s.size() - 1; i >= 0; --i){
-    reversed += spaces[i];
-  }
-  if(reversed == s){
-    cout << "YES" << endl;
-  } else {
-    cout << "NO" << endl;
-  }
-  if(s == ""){
-    cout << "YES" << endl;
-  }
+int s_size=s.size();
+    string s_2;
+    for(int i=0;s_size-1>=i ; ++i){
+
+        char s_letter = s[i];
+        if(s_letter!=' '){
+            s_2 = s_2 + s_letter;
+        }
+    }
+    bool esPalindromo = true;
+    int n = s_2.size();
+
+    for (int i = 0; i < n / 2; ++i) {
+        if (s_2[i] != s_2[n - 1 - i]) {
+            esPalindromo = false;
+            break;
+        }
+    }
+
+    if(esPalindromo) {
+        cout << "YES" << endl;
+    }else {
+        cout << "NO" << endl;
+    }
 }
 
 void exercise_9(string s) {
