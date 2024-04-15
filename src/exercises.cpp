@@ -187,18 +187,18 @@ void exercise_16(int divident, int divider) {
 void exercise_17(int n) {
   // TODO: YOUR CODE HERE
   int num = 2;
-  int contador = 0;
-  while (contador < n) {
-    bool esPrimo = true;
+  int j = 0;
+  while (j < n) {
+    bool prime = true;
     for (int i = 2; i * i <= num; i++) {
       if (num % i == 0) {
-        esPrimo = false;
+        prime = false;
         break;
       }
     }
-  if (esPrimo) {
+  if (prime) {
     cout << num << " ";
-    contador++;
+    j++;
   }
   num++;
   }
