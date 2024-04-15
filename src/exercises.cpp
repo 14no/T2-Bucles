@@ -80,7 +80,11 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
-
+  double ln;
+    for(int i = 0; i <= n; ++i){
+        ln = (pow(1, i + 1)) / i;
+    }
+    cout << ln << endl;
 }
 
 void exercise_8(string s) {
@@ -118,7 +122,7 @@ void exercise_11() {
   float U = 1;
   for(int n = 0; n <= 10; n++){
     cout << "U" << n << " = " << U << endl;
-    U = U / (n + 1);
+    U /= (n + 1);
   }
 }
 
