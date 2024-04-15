@@ -80,11 +80,13 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   // TODO: YOUR CODE HERE
-  double ln;
-    for(int i = 0; i <= n; ++i){
-        ln = (pow(1, i + 1)) / i;
-    }
-    cout << ln << endl;
+  double ln = 0.0;
+  double signo = 1.0;
+  for(int i = 1; i <= n; ++i){
+    ln += signo / i;
+    signo *= -1.0;
+  }
+  cout << ln << endl;
 }
 
 void exercise_8(string s) {
@@ -109,6 +111,7 @@ void exercise_8(string s) {
 
 void exercise_9(string s) {
   // TODO: YOUR CODE HERE
+
 }
 
 int exercise_10(int a, int b) {
