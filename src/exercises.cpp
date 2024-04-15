@@ -131,14 +131,15 @@ void exercise_11() {
 
 void exercise_12() {
   // TODO: YOUR CODE HERE
+
 }
 
 long exercise_13(int n, int k) {
   // TODO: YOUR CODE HERE
-  int suma;
+  long suma;
   long aux = 0;
-  for(int i = i; i <= n; i++){
-    suma = pow(n, k);
+  for(int n = 1; i <= n; i++){
+    suma = pow(i, k);
     aux = aux + suma;
   }
   return aux;
