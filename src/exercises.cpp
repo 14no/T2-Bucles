@@ -66,59 +66,56 @@ void exercise_4(int n) {
 void exercise_5(int n, int k) {
   // TODO: YOUR CODE HERE
   string espacio1;
-    switch(n){
-        case 1:
-            espacio1 =  " "s;
-            break;
-        case 2:
-            espacio1 =  "  "s;
-            break;
-        case 3:
-            espacio1 =  "     "s;
-            break;
-        case 4:
-            espacio1 =  "        "s;
-            break;
-        case 5:
-            espacio1 =  "           "s;
-            break;
-        case 6:
-            espacio1 =  "              "s;
-            break;
-        case 7:
-            espacio1 =  "                 "s;
-            break;
+  switch(n){
+    case 1:
+      espacio1 =  " "s;
+      break;
+    case 2:
+      espacio1 =  "  "s;
+      break;
+    case 3:
+      espacio1 =  "     "s;
+      break;
+    case 4:
+      espacio1 =  "        "s;
+      break;
+    case 5:
+      espacio1 =  "           "s;
+      break;
+    case 6:
+      espacio1 =  "              "s;
+      break;
+    case 7:
+      espacio1 =  "                 "s;
+      break;
+  }
+  string _i;
+  for(int i = 1; i<=k; ++i){
+    int s = 20;
+    int r = 0;
+    while(r<=14){
+      if(espacio1.size()== s+(s*r) + r){
+        espacio1= espacio1 + '\n';
+        break;
+      }
+      ++r;
     }
-    string _i;
-    for(int i = 1; i<=k; ++i){
-        int s = 20;
-        int r = 0;
-        while(r<=14){
-            if(espacio1.size()== s+(s*r) + r){
-                espacio1= espacio1 + '\n';
-                break;
-            }
-            ++r;
-        }
-        if(n==1 && espacio1.size()==1){
-            espacio1 = espacio1 + to_string(i);
-        }
-        else if(to_string(i).size()==1 && espacio1[espacio1.size()-1]!='\n'){
-            _i = "  " + to_string(i);
-            espacio1 = espacio1 + _i;
-        }else if(to_string(i).size()==1 && espacio1[espacio1.size()-1]=='\n'){
-            _i = " " + to_string(i);
-            espacio1 = espacio1 + _i;
-        
-        }else if(to_string(i).size()==2 && espacio1[espacio1.size()-1]!='\n'){
-            _i = " " + to_string(i);
-            espacio1 = espacio1 + _i;
-        }else if(to_string(i).size()==2 && espacio1[espacio1.size()-1]=='\n'){
-            espacio1 = espacio1 + to_string(i);
-        }
-        
-    }
-    cout << espacio1 << " " << endl;
+    if(n==1 && espacio1.size()==1){
+      espacio1 = espacio1 + to_string(i);
+    } else if(to_string(i).size()==1 && espacio1[espacio1.size()-1]!='\n'){
+      _i = "  " + to_string(i);
+      espacio1 = espacio1 + _i;
+    } else if(to_string(i).size()==1 && espacio1[espacio1.size()-1]=='\n'){
+      _i = " " + to_string(i);
+      espacio1 = espacio1 + _i;
+    } else if(to_string(i).size()==2 && espacio1[espacio1.size()-1]!='\n'){
+      _i = " " + to_string(i);
+      espacio1 = espacio1 + _i;
+    } else if(to_string(i).size()==2 && espacio1[espacio1.size()-1]=='\n'){
+      espacio1 = espacio1 + to_string(i);
+    }  
+  }
+  cout << espacio1 << " " << endl;
 }
 
 int exercise_6(int n) {
@@ -145,30 +142,27 @@ void exercise_7(int n) {
 
 void exercise_8(string s) {
   // TODO: YOUR CODE HERE
-int s_size=s.size();
-    string s_2;
-    for(int i=0;s_size-1>=i ; ++i){
-
-        char s_letter = s[i];
-        if(s_letter!=' '){
-            s_2 = s_2 + s_letter;
-        }
+  int s_size=s.size();
+  string s_2;
+  for(int i=0;s_size-1>=i ; ++i){
+    char s_letter = s[i];
+    if(s_letter!=' '){
+      s_2 = s_2 + s_letter;
     }
-    bool esPalindromo = true;
-    int n = s_2.size();
-
-    for (int i = 0; i < n / 2; ++i) {
-        if (s_2[i] != s_2[n - 1 - i]) {
-            esPalindromo = false;
-            break;
-        }
+  }
+  bool esPalindromo = true;
+  int n = s_2.size();
+  for (int i = 0; i < n / 2; ++i) {
+    if (s_2[i] != s_2[n - 1 - i]) {
+      esPalindromo = false;
+      break;
     }
-
-    if(esPalindromo) {
-        cout << "YES" << endl;
-    }else {
-        cout << "NO" << endl;
-    }
+  }
+  if(esPalindromo) {
+    cout << "YES" << endl;
+  } else {
+    cout << "NO" << endl;
+  }
 }
 
 void exercise_9(string s) {
@@ -237,7 +231,7 @@ void exercise_12() {
   int V = 0;
   for (int i = 1; i <= 10; i++){
     V = V + U;
-    cout << "U" << i << " = " << U << "V" << i << " = " << V << endl;
+    cout << "U" << i << " = " << U << " V" << i << " = " << V << endl;
     U = U / (i + 1);
   }
 }
@@ -276,8 +270,8 @@ void exercise_15(int decimal) {
     res = res * mult;
     mult = mult * 10;
     acum = acum + res;
-    }
-    cout << acum << endl;
+  }
+  cout << acum << endl;
 }
 
 void exercise_16(int divident, int divider) {
@@ -318,32 +312,27 @@ void exercise_18_19(int debut, int fin) {
   // TODO: YOUR CODE HERE
   if(fin>=debut){
   if(debut>0 && fin>0){
-
-        for(debut; debut<=fin; ++debut){
-            int i = 0;
-            int debut1= debut;
-            while(debut1!=0){
-                if(debut1%3 == 0){
-                    debut1 += 4;
-                    ++i;
-                    
-                }else if(debut1%4==0){
-                    debut1 /=2;
-                    ++i;
-                    
-                }else{
-                    --debut1;
-                    ++i;
-                    
-                }
-            }
-            cout << debut << "->" << i << endl;
+    for(debut; debut<=fin; ++debut){
+      int i = 0;
+      int debut1= debut;
+      while(debut1!=0){
+        if(debut1%3 == 0){
+          debut1 += 4;
+          ++i;   
+        } else if(debut1%4==0){
+          debut1 /=2;
+          ++i;        
+        } else{
+          --debut1;
+          ++i;      
         }
-    }else{
-            cout << "El numero debe de ser positivo y mayor a zero" << endl;
-        }
-    }else{
-        cout << "El numero de fin no debe de ser menor al inicial" << endl;
-    
+      }
+    cout << debut << "->" << i << endl;
     }
+  } else {
+    cout << "El numero debe de ser positivo y mayor a zero" << endl;
+  }
+  } else {
+    cout << "El numero de fin no debe de ser menor al inicial" << endl;
+  }
 }
