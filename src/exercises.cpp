@@ -227,7 +227,7 @@ void exercise_11() {
   float U = 1;
   for(int n = 0; n <= 10; n++){
     cout << "U" << n << " = " << U << endl;
-    U /= (n + 1);
+    U = U / (n + 1);
   }
 }
 
