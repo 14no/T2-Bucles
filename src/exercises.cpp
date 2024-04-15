@@ -179,7 +179,7 @@ void exercise_16(int divident, int divider) {
   while(divident >= divider){
     divident -= divider;
     ++c;
-    res = dividente;
+    res = divident;
   }
   cout << c << res << endl;
 }
